@@ -1,0 +1,100 @@
+#bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+
+  /* Preserve aspet ratio */
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.wrapper {
+  margin: auto;
+  width: 83.5%;
+  font: 500 16px/19px museosanscyrl, arial, helvetica, sans-serif;
+  color: #F8EEE4;
+}
+
+.logo {
+  content: url(img/bali-main-1366-logo.svg);
+  transform: scale(.7);
+  position:relative;
+  z-index:1;
+  margin-top: 5%;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  float: right;
+  margin: -3.5% -4.9% 0 0;
+}
+
+.menu__item {
+  position: relative;
+  margin-right: 26px;
+  text-decoration: none;
+  font: 500 16px/19px museosanscyrl, arial, helvetica, sans-serif;
+  color: #F8EEE4;
+}
+
+.menu__item:hover {
+  opacity: .5;
+}
+
+.main__title {
+  content: url(img/bali-main-1366-Bali.svg);
+  transform: scale(.72);
+  position:relative;
+  margin: 9.6% 0 0 -4%;
+  z-index:1;
+}
+
+.main__subtitle {
+  content: url(img/bali-main-1366-Indonesia.svg);
+  transform: scale(.72);
+  position:relative;
+  margin: -6% 0 0 1.5%;
+  z-index:1;
+}
+.main__subtitle_text {
+  white-space: pre-line;
+  margin: 0.3% 0 2% 3.3%;
+}
+
+.main__button {
+  display: inline-block;
+  color: #FFFFFF;
+  background: #D4BEA3;
+  padding: 14px 65px;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: opacity .5s;
+  margin-left: 3%;
+}
+
+.main__subtitle_img {
+  display: flex;
+  align-items: center;
+  margin: -23% -7% 0 0;
+  float: right;
+}
+#bg_temple,
+#bg_gates {
+  margin-right: 4%;
+}
+/*
+#bg_temple {
+  float: right;
+  transform: scale(.72);
+  margin: -35% 0 0 0;
+  position: sticky;
+}
+
+#bg_gates {
+  float: right;
+  transform: scale(.72);
+  margin: -35% 0 0 0;
+  position: sticky;
+}
