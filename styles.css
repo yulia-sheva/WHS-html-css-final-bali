@@ -102,27 +102,27 @@
   flex-direction: row;
 }
 
-#bg_temple {
+.main__img_temple {
   background: no-repeat url(img/bali-main-1366-temple.png);
   top: 18.5%;
   left: 54.3%;
 }
 
-#bg_gates {
+.main__img_gates {
   background: no-repeat url(img/bali-main-1366-gates.png);
   top: 19.1%;
   left: 72.7%;
 }
 
-#bg_plant {
+.main__img_plant {
   background: no-repeat url(img/bali-main-1366-plant.png);
   top: 19.1%;
   left: 89%;
 }
 
-#bg_temple,
-#bg_gates,
-#bg_plant {
+.main__img_temple,
+.main__img_gates,
+.main__img_plant {
   position: fixed;
   z-index: -1;
   opacity: 0.9;
@@ -174,17 +174,17 @@
     padding: 15px 95px;
   }
 
-  #bg_temple {
+  .main__img_temple {
     background: no-repeat url(img/bali-main-1920-temple.png);
     top: 26%;
   }
 
-  #bg_gates {
+  .main__img_gates {
     background: no-repeat url(img/bali-main-1920-gates.png);
     top: 27%;
   }
 
-  #bg_plant {
+  .main__img_plant {
     background: no-repeat url(img/bali-main-1920-plant.png);
     top: 27%;
   }
@@ -208,19 +208,19 @@
     margin: -6.2% 0 0.5% 6%;
   }
 
-  #bg_temple {
+  .main__img_temple {
    background: no-repeat url(img/bali-main-1024-temple.png);
    top: 28%;
    left: 50%;
   }
 
-  #bg_gates {
+  .main__img_gates {
   background: no-repeat url(img/bali-main-1024-gates.png);
   top: 29%;
   left: 74%;
   }
 
-  #bg_plant {
+  .main__img_plant {
     background: no-repeat url(img/bali-main-1024-plant.png);
     top: 29%;
     left: 96%;
