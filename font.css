@@ -1,4 +1,14 @@
 @font-face {
-  font-family: "Museo Sans Cyrl";
-  src: url("http://fonts.fontstorage.com/import/museosanscyrl.css");
+  font-family: 'museo_sans_cyrl500';
+  src: url('fonts/museosanscyrl-webfont.woff2') format('woff2'),
+       url('fonts/museosanscyrl-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'pt_serifbold';
+  src: url('fonts/ptserif-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }

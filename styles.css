@@ -5,7 +5,7 @@
 }
 
     /* screen 1366px*/
-#bg {
+.bg {
   background: no-repeat url(img/bali-main-1366.svg);
   position: fixed;
   top: 0;
@@ -15,8 +15,10 @@
   /* Preserve aspet ratio */
   min-width: 100%;
   min-height: 100%;
-  max-width: 100%;
-  max-height: 100%;
+
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
 }
 
 .header {
@@ -46,7 +48,7 @@
   position: relative;
   margin-right: 22px;
   text-decoration: none;
-  font: 500 16px/19px museosanscyrl, arial, helvetica, sans-serif;
+  font: 500 16px/19px 'Museo Sans Cyrl', arial, helvetica, sans-serif;
   color: #F8EEE4;
 }
 
@@ -75,7 +77,7 @@
 }
 .main__text {
   white-space: pre-line;
-  font: 400 16px/17px museosanscyrl, arial, helvetica, sans-serif;
+  font: 400 16px/17px 'Museo Sans Cyrl', arial, helvetica, sans-serif;
   color: #F8EEE4;
   margin: 0.5% 0 2.5% 1%;
 }
@@ -87,7 +89,7 @@
   text-decoration: none;
   border-radius: 30px;
   transition: opacity .5s;
-  font: 400 16px/19px museosanscyrl, arial, helvetica, sans-serif;
+  font: 400 16px/19px 'Museo Sans Cyrl', arial, helvetica, sans-serif;
   align-self: flex-start;
   margin-left: 1%;
 }
@@ -104,19 +106,19 @@
 
 .main__img_temple {
   background: no-repeat url(img/bali-main-1366-temple.png);
-  top: 18.5%;
+  top: 28%;
   left: 54.3%;
 }
 
 .main__img_gates {
   background: no-repeat url(img/bali-main-1366-gates.png);
-  top: 19.1%;
+  top: 29%;
   left: 72.7%;
 }
 
 .main__img_plant {
   background: no-repeat url(img/bali-main-1366-plant.png);
-  top: 19.1%;
+  top: 29%;
   left: 89%;
 }
 
@@ -132,10 +134,22 @@
   min-height: 100%;
 }
 
-@media (min-width: 1370px) {
+@media (min-width: 1400px) {
     /* screen 1920px*/
-  #bg {
+  .bg {
     background: no-repeat url(img/bali-main-1920.svg);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+    /* Preserve aspet ratio */
+    min-width: 100%;
+    min-height: 100%;
+
+    /* Set up proportionate scaling */
+    width: 100%;
+    height: auto;
   }
 
   .header {
@@ -148,7 +162,7 @@
   }
 
   .menu__item {
-    font: 500 22px/26px museosanscyrl, arial, helvetica, sans-serif;
+    font: 500 22px/26px 'Museo Sans Cyrl', arial, helvetica, sans-serif;
     margin-right: 32px;
   }
 
@@ -167,7 +181,7 @@
 
   .main__button,
   .main__text {
-    font: 400 22px/26px museosanscyrl, arial, helvetica, sans-serif;
+    font: 400 22px/26px 'Museo Sans Cyrl', arial, helvetica, sans-serif;
   }
 
   .main__button {
@@ -176,24 +190,36 @@
 
   .main__img_temple {
     background: no-repeat url(img/bali-main-1920-temple.png);
-    top: 26%;
+    top: 39%;
   }
 
   .main__img_gates {
     background: no-repeat url(img/bali-main-1920-gates.png);
-    top: 27%;
+    top: 41%;
   }
 
   .main__img_plant {
     background: no-repeat url(img/bali-main-1920-plant.png);
-    top: 27%;
+    top: 41%;
   }
 }
 
-@media all and (max-width: 1369px) and (min-width: 1000px) {
+@media all and (max-width: 1300px) and (min-width: 401px) {
   /* screen 1024px*/
-  #bg {
+  .bg {
     background: no-repeat url(img/bali-main-1024.svg);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+    /* Preserve aspet ratio */
+    min-width: 100%;
+    min-height: 100%;
+
+    /* Set up proportionate scaling */
+    width: 100%;
+    height: auto;
   }
 
   .header {
@@ -223,14 +249,26 @@
   .main__img_plant {
     background: no-repeat url(img/bali-main-1024-plant.png);
     top: 29%;
-    left: 96%;
+    left: 96.5%;
   }
 }
 
-@media (max-width: 1000px) {
-  /* screen 768px*/
-  #bg {
-    background: no-repeat url(img/bali-main-768.svg);
+@media (max-width: 400px) {
+  /* screen 375px*/
+  .bg {
+    background: no-repeat url(img/bali-main-375.svg);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+    /* Preserve aspet ratio */
+    min-width: 100%;
+    min-height: 100%;
+
+    /* Set up proportionate scaling */
+    width: 100%;
+    height: auto;
   }
 
   .header {
@@ -250,12 +288,15 @@
 
    .main__subtitle {
     font: bold 60px/60px PT Serif, arial, helvetica, sans-serif;
-    margin: -17% 0 9% 17%;
+    margin: -17% 0 12% 17%;
   }
 
   .main__text {
+    display: inline-block;
+    font: 400 18px/23px 'Museo Sans Cyrl', arial, helvetica, sans-serif;
     align-self: center;
-    margin: 0 13% 9% 12%;
+    margin: 0 10% 9% 9%;
+    white-space: normal;
   }
 
   .main__button {
@@ -272,7 +313,7 @@
     position: fixed;
     opacity: 0;
     align-items: center;
-    top: 12%;
+    top: 8%;
     left: 83%;
     width: 28px;
     height: 28px;
@@ -283,7 +324,7 @@
     align-items: center;
     position: fixed;
     font-size: 31px;
-    top: 10%;
+    top: 6%;
     left: 84%;
     color: #FCF5ED;
   }
