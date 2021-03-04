@@ -1,47 +1,54 @@
 <!DOCTYPE html>
 <html>
+
   <head>
-    <meta @charset "UTF-8" />
+    <meta charset "UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="http://fonts.fontstorage.com/import/museosanscyrl.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap">
+    <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="stylesheet" href="font.css">
+    <link rel="stylesheet" href="styles.css">
   </head>
+
   <body>
-    <div class="wrapper">
-      <div id="bg">
-        <img src="img/bali-main-1366.svg" alt="">
-      </div>
-      <header class="header">
-        <div class="logo">
-        </div>
-        <nav class="menu">
-          <a class="menu__item" href="a">Start</a>
-          <a class="menu__item" href="a">Services</a>
-          <a class="menu__item" href="a">About</a>
-          <a class="menu__item" href="a">Blog</a>
-          <a class="menu__item" href="a">Contact us</a>
-        </nav>
-      </header>
-      <section class="main">
+    <div class="bg"></div>
+    <header class="header">
+      <div class="logo"></div>
+      <nav class="menu">
+        <a class="menu__item" href="a">Start</a>
+        <a class="menu__item" href="a">Services</a>
+        <a class="menu__item" href="a">About</a>
+        <a class="menu__item" href="a">Blog</a>
+        <a class="menu__item" href="a">Contact us</a>
+      </nav>
+      <input id="menu-hamburger__toggle" type="checkbox" />
+      <label class="menu-hamburger__btn" for="menu-hamburger__toggle">&#9776;</label>
+      <label class="menu-hamburger__X" for="menu-hamburger__toggle">&#215;</label>
+    </header>
+    <wrapper class="wrapper">
+      <div class="main">
         <h1 class="main__title">
+          Bali
         </h1>
         <p class="main__subtitle">
+          Indonesia
         </p>
-        <p class="main__subtitle_text">
+        <p class="main__text">
           Best Bali travel guide with great tips. Book hotels and
           villas, explore the best spas, events, Bali temples,
           scuba centers, and activities.
         </p>
-        <p class="main__subtitle_img">
-          <img src="img/bali-main-1366-temple.svg" id="bg_temple" alt="">
-          <img src="img/bali-main-1366-gates.svg" id="bg_gates" alt="">
-          <img src="img/bali-main-1366-plant.svg" id="bg_plant" alt="">
-        </p>
         <a class="main__button" href="#">
           Book travel
         </a>
-      </section>
-    </div>
+      </div>
+      <div class="main__img">
+        <div class="main__img_temple" alt=""></div>
+        <div class="main__img_gates" alt=""></div>
+        <div class="main__img_plant" alt=""></div>
+      </div>
+    </wrapper>
   </body>
+
 </html>
